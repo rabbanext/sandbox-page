@@ -95,12 +95,23 @@ a.nav-link {
 
 #hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgb(29, 0, 77));
-    /* background-image: linear-gradient(rgb(29, 0, 77), rgba(0, 0, 0, 0.85)); */
+    /* background-color: #ffffff; */
     height: calc(100vh - 70px);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -70px;
+    /* color: #000; */
+}
+
+#hero .hero-img {
+    width: 600px;
+}
+
+@media (max-width: 1200px) {
+    #hero .hero-img {
+        display: none;
+    }
 }
 
 /* Add some content at the bottom of the video/page */
@@ -244,18 +255,14 @@ section::after {
     position: relative;
 }
 
-#service .card-container {
-    display: flex;
-}
 
 #service .card {
     display: flex;
-    /* height: 500px; */
-    width: 500px;
     background-color: #17141d;
     border-radius: 1.5em;
     box-shadow: -1rem 0 3rem #000000;
     /*   margin-left: -50px; */
+    margin-bottom: 20px;
     transition: 0.4s ease-out;
     position: relative;
     left: 0px;
@@ -270,19 +277,31 @@ section::after {
     height: 180px;
 }
 
-#service .card:not(:first-child) {
-    margin-left: -50px;
-}
 
-#service .card:hover {
-    transform: translateY(-20px);
-    transition: 0.4s ease-out;
-}
+@media (min-width: 992px) {
 
-#service .card:hover~.card {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
+    #service .card {
+        width: 500px;
+    }
+
+    #service .card-container {
+        display: flex;
+    }
+
+    #service .card:not(:first-child) {
+        margin-left: -50px;
+    }
+
+    #service .card:hover {
+        transform: translateY(-20px);
+        transition: 0.4s ease-out;
+    }
+
+    #service .card:hover~.card {
+        position: relative;
+        left: 50px;
+        transition: 0.4s ease-out;
+    }
 }
 
 
