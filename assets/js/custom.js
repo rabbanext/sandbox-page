@@ -90,3 +90,20 @@ window.addEventListener("scroll", function () {
     init();
 
 })();
+
+
+const anim = document.querySelector('.anim');
+anim.classList.remove('animate__animated');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            anim.classList.add('animate__animated');
+            return;
+        }
+
+        anim.classList.remove('animate__animated');
+    });
+});
+
+observer.observe(document.querySelector('.parallax-item'));
