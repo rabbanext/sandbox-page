@@ -579,112 +579,24 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Problem Statements
---------------------------------------------------------------*/
-.problem-statements {
-  padding-top: 20px;
-  background:
-    linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, rgba(61, 179, 197, 0.8) 100%),
-    url("../img/hero-bg.gif");
-  /* background: url("../img/hero-bg.jpg") top center; */
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-}
-
-#problem-statements:before {
-  content: "";
-  background: linear-gradient(to top, #1367A6 0%, rgba(61, 179, 197, 0) 100%);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-
-.problem-statements .container h3 {
-  padding-left: 15px;
-  font-weight: 700;
-  font-size: 28px;
-  font-family: "Exo", sans-serif;
-}
-
-.problem-statements .icon-box {
-  padding-left: 15px;
-}
-
-.problem-statements .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
-}
-
-.problem-statements .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: #51d9ff;
-}
-
-.problem-statements .icon-box p {
-  font-size: 15px;
-  margin-left: 60px;
-}
-
-.problem-statements .icon-box ol {
-  font-size: 15px;
-  margin-left: 60px;
-}
-
-.problem-statements .icon-box li {
-  margin-bottom: 10px;
-}
-
-.problem-statements .image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
-}
-
-/*--------------------------------------------------------------
 # Timeline
 --------------------------------------------------------------*/
 .timeline {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
+  background-image: url("../img/faq-bg.png");
 }
 
 .timeline-item {
-  padding: 3em 2em 2em;
+  text-align: center;
+  margin: 10px 5px;
   position: relative;
-  color: rgba(0, 0, 0, .7);
-  border-left: 2px solid rgba(0, 0, 0, .3);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  border-radius: 15px;
 }
 
-.timeline-item::before {
-  content: attr(date);
-  position: absolute;
-  left: 2em;
-  font-weight: bold;
-  top: 1em;
-  display: block;
-}
-
-.timeline-item::after {
-  width: 10px;
-  height: 10px;
-  display: block;
-  top: 1em;
-  position: absolute;
-  left: -7px;
-  border-radius: 10px;
-  content: '';
-  border: 2px solid rgba(0, 0, 0, .3);
-  background: white;
-}
-
-.timeline-item:last-child {
-  border-image: linear-gradient(to bottom, rgba(0, 0, 0, .3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+.timeline-item img {
+  border-radius: 15px;
+  height: 150px;
 }
 
 /*--------------------------------------------------------------
@@ -760,17 +672,17 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# problem-statements
 --------------------------------------------------------------*/
-.testimonials {
+.problem-statements {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  /* background: url("../img/problem-statements-bg.jpg") no-repeat;
   background-position: center center;
-  background-size: cover;
-  position: relative;
+  background-size: cover; */
+  /* position: relative; */
 }
 
-.testimonials::before {
+/* .problem-statements::before {
   content: "";
   position: absolute;
   left: 0;
@@ -778,92 +690,72 @@ section {
   top: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
-}
+} */
 
-.testimonials .section-header {
+.problem-statements .section-header {
   margin-bottom: 40px;
 }
 
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
+.problem-statements .problem-statements-carousel,
+.problem-statements .problem-statements-slider {
   overflow: hidden;
 }
 
-.testimonials .testimonial-item {
-  text-align: center;
+.problem-statements .testimonial-item {
   color: #fff;
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
+.problem-statements .testimonial-item .testimonial-img {
+  width: 100%;
+  height: 100%;
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
 }
 
-.testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #fff;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #ddd;
-  margin: 0 0 15px 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
+.problem-statements .testimonial-item .quote-icon-left,
+.problem-statements .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.6);
   font-size: 26px;
 }
 
-.testimonials .testimonial-item .quote-icon-left {
+.problem-statements .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.testimonials .testimonial-item .quote-icon-right {
+.problem-statements .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
   top: 10px;
 }
 
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-  color: #eee;
-}
-
-.testimonials .swiper-pagination {
+.problem-statements .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet {
+.problem-statements .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.4);
   opacity: 0.5;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+.problem-statements .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #51d9ff;
   opacity: 1;
 }
 
 @media (min-width: 1024px) {
-  .testimonials {
+  .problem-statements {
     background-attachment: fixed;
   }
 }
 
 @media (min-width: 992px) {
-  .testimonials .testimonial-item p {
+  .problem-statements .testimonial-item p {
     width: 80%;
   }
 }

@@ -347,20 +347,25 @@
   });
 
   /**
-   * Testimonials slider
+   * problem-statements slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.problem-statements-slider', {
     speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
     },
-    slidesPerView: 'auto',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     }
   });
 
