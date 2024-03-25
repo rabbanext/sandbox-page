@@ -438,19 +438,16 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#particles-js {
+/* #particles-js {
   background-image: url("../img/1about.png");
   background-repeat: no-repeat;
   background-position: left bottom;
-}
+} */
 
 #hero {
   width: 100%;
-  min-height: 90vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  min-height: 100vh;
+  position: relative;
 }
 
 #hero .container {
