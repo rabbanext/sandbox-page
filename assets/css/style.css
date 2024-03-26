@@ -533,7 +533,11 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Exo", sans-serif;
-  color: #151515;
+  color: #FFFFFF;
+  background: linear-gradient(0deg, #ff00e6, #2394d5, #2af3b7);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
 }
 
 .section-content {
@@ -554,24 +558,6 @@ section {
   font-weight: 700;
   font-size: 28px;
   font-family: "Exo", sans-serif;
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding: 0 0 8px 26px;
-  position: relative;
-}
-
-.about .content ul i {
-  position: absolute;
-  font-size: 20px;
-  left: 0;
-  top: -3px;
-  color: #51d9ff;
 }
 
 .about .content p {
