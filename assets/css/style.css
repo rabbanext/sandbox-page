@@ -361,6 +361,7 @@ h6 {
   background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
   z-index: 999;
+  height: 100vh;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -532,6 +533,31 @@ h6 {
   #hero h2 {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  #hero .hero-component{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    animation: animate-topdown 5s alternate linear infinite;
+  }
+  #hero .hero-component2{
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    animation: animate-topdown 2s alternate linear infinite;
+  }
+  #hero .hero-component3{
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    animation: animate-topdown 3s alternate linear infinite;
+  }
+  #hero .hero-component4{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    animation: animate-topdown 7s alternate linear infinite;
   }
 }
 
