@@ -448,12 +448,56 @@ h6 {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  background-image: url("../img/bg/line-wave.png");
+  background-position: bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 #hero .container {
   position: relative;
   padding-top: 74px;
   text-align: center;
+}
+
+#hero .hero-vr{
+  position: relative;
+}
+
+#hero .hero-vr-human{
+  text-align: center;
+}
+
+#hero .hero-vr-bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: animate-circle 60s linear infinite;
+}
+
+#hero .hero-component{
+  position: absolute;
+  top: 140px;
+  left: 140px;
+  animation: animate-topdown 5s alternate linear infinite;
+}
+#hero .hero-component2{
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  animation: animate-topdown 2s alternate linear infinite;
+}
+#hero .hero-component3{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  animation: animate-topdown 3s alternate linear infinite;
+}
+#hero .hero-component4{
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  animation: animate-topdown 7s alternate linear infinite;
 }
 
 #hero h1 {
@@ -851,7 +895,7 @@ section {
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
+  animation: animate-circle 1s linear infinite;
 }
 
 .register .php-email-form input,
@@ -888,13 +932,23 @@ section {
   background: #ffcd6b;
 }
 
-@keyframes animate-loading {
+@keyframes animate-topdown {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(0);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes animate-circle {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
