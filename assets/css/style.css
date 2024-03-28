@@ -553,7 +553,7 @@ h6 {
   }
   #hero .hero-component3{
     position: absolute;
-    top: 1px;
+    top: 30px;
     left: 50%;
     animation: animate-topdown 5s alternate linear infinite;
   }
@@ -614,7 +614,7 @@ section {
 
 .section-content {
   padding: 40px 30px;
-  margin: 10px;
+  margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
@@ -726,8 +726,12 @@ section {
 }
 
 .problem-statements .paragraph {
-  width: 100%;
+  /* width: 100%; */
   text-align: justify;
+}
+
+.problem-statements .scope-of-work {
+  overflow-x: scroll;
 }
 
 .problem-statements .badge-light {
