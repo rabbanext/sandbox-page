@@ -465,38 +465,41 @@ h6 {
   text-align: center;
 }
 
-#hero .hero-vr{
+#hero .hero-vr {
   position: relative;
   max-width: 90vw;
   margin-top: 40px;
 }
 
-#hero .hero-vr-bg{
+#hero .hero-vr-bg {
   position: absolute;
   top: 50%;
   left: 50%;
   animation: animate-circle 60s linear infinite;
 }
 
-#hero .hero-component{
+#hero .hero-component {
   position: absolute;
   top: 140px;
   left: 140px;
   animation: animate-topdown 5s alternate linear infinite;
 }
-#hero .hero-component2{
+
+#hero .hero-component2 {
   position: absolute;
   top: 40px;
   left: 100px;
   animation: animate-topdown 2s alternate linear infinite;
 }
-#hero .hero-component3{
+
+#hero .hero-component3 {
   position: absolute;
   top: 10px;
   left: 50%;
   animation: animate-topdown 3s alternate linear infinite;
 }
-#hero .hero-component4{
+
+#hero .hero-component4 {
   position: absolute;
   top: 70px;
   right: 70px;
@@ -539,25 +542,28 @@ h6 {
     line-height: 24px;
   }
 
-  #hero .hero-component{
+  #hero .hero-component {
     position: absolute;
     bottom: 114px;
     left: 14px;
     animation: animate-topdown 7s alternate linear infinite;
   }
-  #hero .hero-component2{
+
+  #hero .hero-component2 {
     position: absolute;
     top: 4px;
     left: 10px;
     animation: animate-topdown 4s alternate linear infinite;
   }
-  #hero .hero-component3{
+
+  #hero .hero-component3 {
     position: absolute;
     top: 30px;
     left: 50%;
     animation: animate-topdown 5s alternate linear infinite;
   }
-  #hero .hero-component4{
+
+  #hero .hero-component4 {
     position: absolute;
     top: 47px;
     right: 7px;
@@ -650,30 +656,95 @@ section {
 # Timeline
 --------------------------------------------------------------*/
 .timeline {
-  /* background-color: #FFFFFF; */
-  background-image: url("../img/faq-bg.png");
+  background-color: #1367A6;
+  background: url("../img/bg/line-wave.png"), #1367A6;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: bottom;
+  /* background-image: url("../img/faq-bg.png"); */
+}
+
+.timeline-events {
+  margin: 0 300px;
+}
+
+@media (max-width: 1366px) {
+  .timeline-events {
+    margin: 0;
+  }
+}
+
+.timeline-item-active {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: #000000;
+  border-left: 4px solid #000000;
+}
+
+.timeline-item-active::before {
+  content: attr(date);
+  position: absolute;
+  left: 2em;
+  font-weight: 700;
+  top: .8em;
+  display: block;
+  color: red;
+}
+
+.timeline-item-active::after {
+  width: 15px;
+  height: 15px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -9px;
+  border-radius: 10px;
+  content: '';
+  border: 4px solid #ff0000;
+  background: #ff0000;
 }
 
 .timeline-item {
-  text-align: center;
-  margin: 10px 5px;
+  padding: 3em 2em 2em;
   position: relative;
-  color: #FFFFFF;
-  /* background-color: rgba(0, 0, 0, 0.7); */
-  border-radius: 15px;
+  color: #000000;
+  border-left: 4px solid #000000;
 }
 
-.timeline-item img {
-  border-radius: 15px;
-  height: 150px;
+.timeline-item::before {
+  content: attr(date);
+  position: absolute;
+  left: 2em;
+  font-weight: 600;
+  top: .8em;
+  display: block;
+}
+
+.timeline-item::after {
+  width: 15px;
+  height: 15px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -9px;
+  border-radius: 10px;
+  content: '';
+  border: 4px solid #000000;
+  background: #1367A6;
+}
+
+.timeline-item:last-child {
+  border-image: linear-gradient(to bottom, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 /*--------------------------------------------------------------
 # Prizes
 --------------------------------------------------------------*/
-#prizes{
+#prizes {
   color: #FFFFFF;
 }
+
 .prizes .content {
   padding: 30px 0;
   background: rgba(255, 255, 255, 0.25);
