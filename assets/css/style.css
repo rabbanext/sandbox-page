@@ -4,7 +4,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #1367A6;
-  background: url("../img/bg.png"), rgba(19, 102, 166, 0.8)repeat;
+  background: url("../img/bg/bokeh.png"), rgba(19, 102, 166, 0.8)repeat;
   background-position: center;
   background-size: 100vw auto;
   color: #000000;
@@ -465,41 +465,42 @@ h6 {
   text-align: center;
 }
 
-#hero .hero-vr {
+#hero h5{
+  color: #FFFFFF;
+}
+
+#hero .hero-vr{
   position: relative;
   max-width: 90vw;
   margin-top: 40px;
 }
 
-#hero .hero-vr-bg {
+#hero .hero-vr-bg{
   position: absolute;
   top: 50%;
   left: 50%;
   animation: animate-circle 60s linear infinite;
 }
 
-#hero .hero-component {
+#hero .hero-component{
   position: absolute;
   top: 140px;
   left: 140px;
   animation: animate-topdown 5s alternate linear infinite;
 }
-
-#hero .hero-component2 {
+#hero .hero-component2{
   position: absolute;
   top: 40px;
   left: 100px;
   animation: animate-topdown 2s alternate linear infinite;
 }
-
-#hero .hero-component3 {
+#hero .hero-component3{
   position: absolute;
   top: 10px;
   left: 50%;
   animation: animate-topdown 3s alternate linear infinite;
 }
-
-#hero .hero-component4 {
+#hero .hero-component4{
   position: absolute;
   top: 70px;
   right: 70px;
@@ -542,28 +543,25 @@ h6 {
     line-height: 24px;
   }
 
-  #hero .hero-component {
+  #hero .hero-component{
     position: absolute;
     bottom: 114px;
     left: 14px;
     animation: animate-topdown 7s alternate linear infinite;
   }
-
-  #hero .hero-component2 {
+  #hero .hero-component2{
     position: absolute;
     top: 4px;
     left: 10px;
     animation: animate-topdown 4s alternate linear infinite;
   }
-
-  #hero .hero-component3 {
+  #hero .hero-component3{
     position: absolute;
     top: 30px;
     left: 50%;
     animation: animate-topdown 5s alternate linear infinite;
   }
-
-  #hero .hero-component4 {
+  #hero .hero-component4{
     position: absolute;
     top: 47px;
     right: 7px;
@@ -612,7 +610,7 @@ section {
   text-transform: uppercase;
   font-family: "Exo", sans-serif;
   color: #FFFFFF;
-  background: linear-gradient(0deg, #ff00e6, #2394d5, #2af3b7);
+  background: linear-gradient(0deg, #ff00e6, #0044ff, #ff00e6);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
@@ -741,10 +739,9 @@ section {
 /*--------------------------------------------------------------
 # Prizes
 --------------------------------------------------------------*/
-#prizes {
+#prizes{
   color: #FFFFFF;
 }
-
 .prizes .content {
   padding: 30px 0;
   background: rgba(255, 255, 255, 0.25);
@@ -753,17 +750,6 @@ section {
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.prizes .content h1 {
-  /* font-size: 5em; */
-  font-weight: 900;
-  letter-spacing: -2px;
-  background: -webkit-linear-gradient(right, #012345, #0091ff, #012345);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #012345;
-  margin-bottom: 0;
 }
 
 .prizes h3 {
@@ -792,8 +778,13 @@ section {
   margin-bottom: 40px;
 }
 
-.problem-statements .h3 {
-  font-weight: 900;
+.problem-statements h3 {
+  font-weight: 700;
+}
+
+.problem-statements h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .problem-statements .paragraph {
@@ -803,6 +794,24 @@ section {
 
 .problem-statements .scope-of-work {
   overflow-x: scroll;
+}
+
+.problem-statements .icon-show {
+  display: none;
+}
+
+.problem-statements .collapsed {
+  display: block;
+}
+
+.problem-statements .collapsed .icon-show {
+  display: inline-block;
+  transition: 0.6s;
+}
+
+.problem-statements .collapsed .icon-close {
+  display: none;
+  transition: 0.6s;
 }
 
 .problem-statements .badge-light {
@@ -1038,8 +1047,8 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #001234;
-  background-image: url("../img/footer-bg.png");
-  background-position: center;
+  background-image: url("../img/bg/footer.png");
+  background-position: top;
   color: #fff;
   font-size: 14px;
   padding-top: 30px;
